@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Events and Interactivity</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--Event Handling Section-->
+    <!--click-->
+    <button id="greeting-btn">Say Hello</button>
+    <!--hover-box-->
+    <div id="hover-box">Hover over me!</div>
+    <!--keypress-->
+    <p>Type anything: <span id="keypress-display"></span></p>
+    <!--secret double-click-->
+    <footer>double-click here for a secret!</footer>
+
+    <!--2. Interactive Elements section -->
+    <div class="slideshow">
+      <img src="image.png" id="slide" width="250" alt="image" />
+      <button id="prev-btn">Previous</button>
+      <button id="next-btn">Next</button>
+    </div>
+    <div class="according">
+      <h3>FAQ 1</h3>
+      <p class="according-content">Answer to FAQ 1...</p>
+      <h3>FAQ 3</h3>
+      <p class="according-content">Answer to FAQ 2...</p>
+    </div>
+
+    <!--form validation section -->
+    <form id="signUp-form">
+      <input
+        type="text"
+        id="username"
+        placeholder="Username (required)"
+        required
+      />
+      <input type="email" id="email" placeholder="Email" />
+      <input
+        type="password"
+        id="password"
+        placeholder="Password (min 8 chars)"
+        required
+      />
+      <button type="submit">Sign Up</button>
+      <p id="error-message"></p>
+    </form>
+
+    <!--javascript-->
+    <script src="script.js"></script>
+  </body>
+</html>
