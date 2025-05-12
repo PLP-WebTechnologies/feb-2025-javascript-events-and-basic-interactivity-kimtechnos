@@ -35,7 +35,7 @@ document.getElementById("next-btn").addEventListener("click", () => {
   setTimeout(() => slideImg.classList.remove("fade"), 500);
 });
 document.getElementById("prev-btn").addEventListener("click", () => {
-  currentIndex = (currentIndex + 1) % images.length;
+  currentIndex = (currentIndex - 1) % images.length;
   slideImg.src = images[currentIndex];
   slideImg.classList.add("fade"); //bonus: css animation
   setTimeout(() => slideImg.classList.remove("fade"), 500);
@@ -67,6 +67,7 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   const email = document.getElementById("email").value.trim();
+  
   const password = document.getElementById("password").value.trim();
 
   if (password.length < 8) {
